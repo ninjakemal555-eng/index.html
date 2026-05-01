@@ -6,32 +6,46 @@
     <title>Kai Shop | Luxury Collection</title>
     <style>
         body { font-family: 'Segoe UI', sans-serif; background: #0a0a0a; color: white; margin: 0; text-align: center; }
-        header { padding: 50px 20px; background: linear-gradient(135deg, #7349ac 0%, #4b2c7d 100%); clip-path: polygon(0 0, 100% 0, 100% 90%, 0 100%); }
-        h1 { font-size: 3rem; letter-spacing: 5px; margin: 0; text-transform: uppercase; }
+        
+        /* Заглавна част с твоята фонова снимка */
+        header { 
+            padding: 100px 20px; 
+            background-image: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url('viber_изображение_2026-05-01_16-04-43-951.webp'); 
+            background-size: cover; 
+            background-position: center;
+            clip-path: polygon(0 0, 100% 0, 100% 90%, 0 100%); 
+        }
+        
+        h1 { font-size: 3.5rem; letter-spacing: 8px; margin: 0; text-transform: uppercase; text-shadow: 2px 2px 10px rgba(0,0,0,0.5); }
+        .promo { font-size: 1.2rem; background: #7349ac; display: inline-block; padding: 5px 15px; border-radius: 5px; margin-top: 10px; }
+
         .container { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 20px; padding: 40px 15px; max-width: 1200px; margin: auto; }
         .card { background: #161616; border-radius: 15px; overflow: hidden; border: 1px solid #222; transition: 0.3s; }
         .card:hover { transform: translateY(-5px); border-color: #7349ac; }
         .card img { width: 100%; height: 350px; object-fit: cover; }
+        
         .info { padding: 20px; }
         .brand { font-size: 1.2rem; font-weight: bold; margin-bottom: 5px; text-transform: uppercase; }
         .price { font-size: 1.6rem; color: #7349ac; font-weight: bold; margin-bottom: 15px; }
+        
         .viber-btn { background: #7349ac; color: white; padding: 12px; text-decoration: none; display: block; border-radius: 10px; font-weight: bold; transition: 0.3s; }
         .viber-btn:hover { background: #5e3b8e; }
-        footer { padding: 30px; color: #444; font-size: 0.9rem; }
+        
+        footer { padding: 40px; color: #666; font-size: 1rem; font-weight: bold; }
     </style>
 </head>
 <body>
 
 <header>
     <h1>KAI SHOP</h1>
-    <p>PREMIUM QUALITY • ALL 30€</p>
+    <div class="promo">ПРЕМИУМ КАЧЕСТВО • 30€</div>
 </header>
 
 <div class="container">
     <div class="card">
         <img src="57a7e26567074817bb7530af6a8c53dc.png">
         <div class="info">
-            <div class="brand">Hugo Boss White</div>
+            <div class="brand">Hugo Boss Бяло</div>
             <div class="price">30€</div>
             <a href="viber://chat?number=359886622048" class="viber-btn">ПОРЪЧАЙ В VIBER</a>
         </div>
@@ -40,16 +54,16 @@
     <div class="card">
         <img src="74bff8974db24a20b3f50789ed64ed6f.png">
         <div class="info">
-            <div class="brand">Kenzo Black Tiger</div>
+            <div class="brand">Kenzo Черно</div>
             <div class="price">30€</div>
             <a href="viber://chat?number=359886622048" class="viber-btn">ПОРЪЧАЙ В VIBER</a>
         </div>
     </div>
 
     <div class="card">
-        <img src="78c5f865c6df44e2bc3f43d9106fccc.png">
+        <img src="78c5f865c6df44e2bc3f43d9106fcccc.png">
         <div class="info">
-            <div class="brand">Gucci White</div>
+            <div class="brand">Gucci Бяло</div>
             <div class="price">30€</div>
             <a href="viber://chat?number=359886622048" class="viber-btn">ПОРЪЧАЙ В VIBER</a>
         </div>
@@ -58,7 +72,7 @@
     <div class="card">
         <img src="91b2ab9c44d04a6bbd2a25e897ca70a2.png">
         <div class="info">
-            <div class="brand">Hermès White</div>
+            <div class="brand">Hermès Бяло</div>
             <div class="price">30€</div>
             <a href="viber://chat?number=359886622048" class="viber-btn">ПОРЪЧАЙ В VIBER</a>
         </div>
@@ -67,7 +81,7 @@
     <div class="card">
         <img src="930370dade084faf99baa636afbe77c6.png">
         <div class="info">
-            <div class="brand">Kenzo White Tiger</div>
+            <div class="brand">Kenzo Бяло</div>
             <div class="price">30€</div>
             <a href="viber://chat?number=359886622048" class="viber-btn">ПОРЪЧАЙ В VIBER</a>
         </div>
@@ -76,7 +90,7 @@
     <div class="card">
         <img src="9e85a00a4f5e45f4ae936f454e2f8b3a.png">
         <div class="info">
-            <div class="brand">Hermès Black</div>
+            <div class="brand">Hermès Черно</div>
             <div class="price">30€</div>
             <a href="viber://chat?number=359886622048" class="viber-btn">ПОРЪЧАЙ В VIBER</a>
         </div>
@@ -85,7 +99,7 @@
     <div class="card">
         <img src="bc10fc441e92499fbb3fd152dbcf8f23.png">
         <div class="info">
-            <div class="brand">Gucci Black</div>
+            <div class="brand">Gucci Черно</div>
             <div class="price">30€</div>
             <a href="viber://chat?number=359886622048" class="viber-btn">ПОРЪЧАЙ В VIBER</a>
         </div>
@@ -94,7 +108,7 @@
     <div class="card">
         <img src="d867e3e1809c4561902f5d2e1362f5e2.png">
         <div class="info">
-            <div class="brand">Hugo Boss Black</div>
+            <div class="brand">Hugo Boss Черно</div>
             <div class="price">30€</div>
             <a href="viber://chat?number=359886622048" class="viber-btn">ПОРЪЧАЙ В VIBER</a>
         </div>
@@ -102,7 +116,8 @@
 </div>
 
 <footer>
-    <p>© 2026 KAI SHOP. Бърза доставка до 48 часа.</p>
+    <p>БЪРЗА ДОСТАВКА САМО С ЕКОНТ 🚛</p>
+    <p style="font-size: 0.8rem; font-weight: normal;">© 2026 KAI SHOP</p>
 </footer>
 
 </body>
