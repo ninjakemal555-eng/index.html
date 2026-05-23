@@ -74,4 +74,454 @@
         .brand-text span.purple { color: var(--accent-purple); }
 
         .nav-links {
-            list-style: none
+            list-style: none;
+            display: flex;
+        }
+
+        .nav-links a {
+            color: var(--text-light);
+            text-decoration: none;
+            padding: 10px 15px;
+            font-weight: bold;
+            text-transform: uppercase;
+            font-size: 14px;
+            transition: 0.3s;
+        }
+
+        .nav-links a:hover {
+            color: var(--accent-blue);
+            text-shadow: 0 0 10px var(--accent-blue);
+        }
+
+        /* ХЕРО БАНЕР */
+        .hero {
+            height: 60vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            position: relative;
+            background: radial-gradient(circle, rgba(181,0,181,0.2) 0%, rgba(0,0,0,1) 80%);
+            margin-top: 70px;
+            padding: 20px;
+        }
+
+        .hero-logo {
+            width: 150px;
+            height: 150px;
+            object-fit: cover;
+            margin-bottom: 20px;
+            border-radius: 50%;
+            box-shadow: 0 0 30px rgba(0, 191, 255, 0.5);
+            border: 2px solid var(--accent-purple);
+        }
+
+        .hero-content h1 {
+            font-size: 48px;
+            font-weight: 900;
+            text-transform: uppercase;
+            letter-spacing: 3px;
+            margin-bottom: 10px;
+            background: linear-gradient(45deg, #fff, #999);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+
+        .hero-content p {
+            font-size: 18px;
+            color: var(--text-gray);
+            max-width: 600px;
+            margin: 0 auto 30px;
+        }
+
+        .btn-shop {
+            display: inline-block;
+            background: linear-gradient(90deg, var(--accent-purple), var(--accent-blue));
+            color: #fff;
+            padding: 15px 40px;
+            text-decoration: none;
+            border-radius: 50px;
+            font-weight: bold;
+            text-transform: uppercase;
+            box-shadow: 0 0 20px rgba(0, 191, 255, 0.4);
+            transition: 0.3s;
+        }
+
+        .btn-shop:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 0 30px rgba(181, 0, 181, 0.8);
+        }
+
+        /* КАТАЛОГ С ПРОДУКТИ */
+        .shop-section {
+            max-width: 1200px;
+            margin: 60px auto;
+            padding: 0 20px;
+        }
+
+        .section-title {
+            text-align: center;
+            font-size: 36px;
+            font-weight: 900;
+            text-transform: uppercase;
+            margin-bottom: 50px;
+            letter-spacing: 2px;
+        }
+
+        .section-title span {
+            background: linear-gradient(90deg, var(--accent-purple), var(--accent-blue));
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+
+        .products-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 30px;
+        }
+
+        .product-card {
+            background-color: var(--panel-dark);
+            border: 1px solid #151515;
+            border-radius: 16px;
+            overflow: hidden;
+            transition: 0.3s;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .product-card:hover {
+            transform: translateY(-8px);
+            border-color: var(--accent-blue);
+            box-shadow: 0 10px 30px rgba(0, 191, 255, 0.15);
+        }
+
+        .product-img {
+            width: 100%;
+            height: 380px;
+            object-fit: cover;
+            background-color: #050505;
+        }
+
+        .product-info {
+            padding: 20px;
+            text-align: center;
+            flex-grow: 1;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+        }
+
+        .product-brand {
+            font-size: 13px;
+            text-transform: uppercase;
+            color: var(--accent-blue);
+            font-weight: bold;
+            letter-spacing: 2px;
+            margin-bottom: 5px;
+        }
+
+        .product-title {
+            font-size: 18px;
+            font-weight: 700;
+            margin-bottom: 15px;
+            color: var(--text-light);
+        }
+
+        .product-price {
+            font-size: 24px;
+            color: #fff;
+            font-weight: 800;
+            margin-bottom: 20px;
+            border-top: 1px solid #1a1a1a;
+            padding-top: 10px;
+        }
+
+        .order-btn-viber {
+            display: block;
+            background-color: #7360f2;
+            color: white;
+            text-decoration: none;
+            padding: 12px;
+            border-radius: 8px;
+            font-weight: bold;
+            text-transform: uppercase;
+            font-size: 13px;
+            transition: 0.3s;
+        }
+
+        .order-btn-viber:hover {
+            background-color: #5b49d0;
+            box-shadow: 0 0 15px rgba(115, 96, 242, 0.6);
+        }
+
+        /* СОЦИАЛНИ МРЕЖИ & КОНТАКТИ */
+        .socials-section {
+            background-color: var(--panel-dark);
+            border-top: 1px solid #151515;
+            padding: 60px 20px;
+            text-align: center;
+        }
+
+        .socials-title {
+            font-size: 24px;
+            text-transform: uppercase;
+            margin-bottom: 30px;
+        }
+
+        .social-buttons {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            flex-wrap: wrap;
+            margin-bottom: 20px;
+        }
+
+        .social-btn {
+            padding: 12px 35px;
+            border-radius: 30px;
+            text-decoration: none;
+            color: #fff;
+            font-weight: bold;
+            text-transform: uppercase;
+            font-size: 14px;
+            transition: 0.3s;
+        }
+
+        .btn-tiktok { background-color: #000; border: 2px solid #ff0050; }
+        .btn-tiktok:hover { box-shadow: 0 0 15px #ff0050; }
+
+        .btn-instagram { background: linear-gradient(45deg, #f09433, #e6683c, #dc2743, #cc2366, #bc1888); }
+        .btn-instagram:hover { box-shadow: 0 0 15px #dc2743; }
+
+        /* ФУТЪР */
+        footer {
+            background-color: #000;
+            color: var(--text-gray);
+            text-align: center;
+            padding: 30px 20px;
+            font-size: 13px;
+            border-top: 1px solid #111;
+        }
+
+        @media (max-width: 768px) {
+            .hero-content h1 { font-size: 32px; }
+            .nav-links { display: none; }
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <div class="nav-container">
+            <a href="#" class="brand-logo">
+                <img src="logo.webp" alt="KAI Logo" class="logo-img">
+                <div class="brand-text">KAI <span class="purple">SHOP</span></div>
+            </a>
+            <ul class="nav-links">
+                <li><a href="#catalog">Каталог</a></li>
+                <li><a href="#socials">Социални мрежи</a></li>
+            </ul>
+        </div>
+    </header>
+
+    <div class="hero">
+        <div class="hero-content">
+            <img src="logo.webp" alt="KAI Logo" class="hero-logo">
+            <h1>KAI SHOP CLOTHING</h1>
+            <p>Премиум тениски и улична мода директно във вашия гардероб.</p>
+            <a href="#catalog" class="btn-shop">Разгледай колекцията</a>
+        </div>
+    </div>
+
+    <section id="catalog" class="shop-section">
+        <h2 class="section-title">Каталог <span>Цени</span></h2>
+        
+        <div class="products-grid">
+            
+            <div class="product-card">
+                <img class="product-img" src="kenzo-white.png" alt="Kenzo Tiger White">
+                <div class="product-info">
+                    <div>
+                        <p class="product-brand">Kenzo</p>
+                        <h3 class="product-title">Бяла премиум тениска с тигър и рози</h3>
+                    </div>
+                    <div>
+                        <p class="product-price">30.00 €</p>
+                        <a href="viber://chat?number=%2B359886622048&context=Искам%20да%20поръчам%20Бяла%20тениска%20Kenzo%20с%20тигър" class="order-btn-viber">Поръчай по Viber</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="product-card">
+                <img class="product-img" src="kenzo-black.png" alt="Kenzo Tiger Black">
+                <div class="product-info">
+                    <div>
+                        <p class="product-brand">Kenzo</p>
+                        <h3 class="product-title">Черна премиум тениска с тигър и рози</h3>
+                    </div>
+                    <div>
+                        <p class="product-price">30.00 €</p>
+                        <a href="viber://chat?number=%2B359886622048&context=Искам%20да%20поръчам%20Черна%20тениска%20Kenzo%20с%20тигър" class="order-btn-viber">Поръчай по Viber</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="product-card">
+                <img class="product-img" src="hugo-black.png" alt="Hugo Black Dog">
+                <div class="product-info">
+                    <div>
+                        <p class="product-brand">Hugo</p>
+                        <h3 class="product-title">Черна тениска с червен фон и доберман</h3>
+                    </div>
+                    <div>
+                        <p class="product-price">30.00 €</p>
+                        <a href="viber://chat?number=%2B359886622048&context=Искам%20да%20поръчам%20Черна%20тениска%20Hugo%20с%20доберман" class="order-btn-viber">Поръчай по Viber</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="product-card">
+                <img class="product-img" src="hugo-white.jpg" alt="Hugo White Dog">
+                <div class="product-info">
+                    <div>
+                        <p class="product-brand">Hugo</p>
+                        <h3 class="product-title">Бяла тениска с неоново куче</h3>
+                    </div>
+                    <div>
+                        <p class="product-price">30.00 €</p>
+                        <a href="viber://chat?number=%2B359886622048&context=Искам%20да%20поръчам%20Бяла%20тениска%20Hugo%20с%20доберман" class="order-btn-viber">Поръчай по Viber</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="product-card">
+                <img class="product-img" src="hermes-black.png" alt="Hermes Black">
+                <div class="product-info">
+                    <div>
+                        <p class="product-brand">Hermes</p>
+                        <h3 class="product-title">Черна памучна тениска с кралски кон</h3>
+                    </div>
+                    <div>
+                        <p class="product-price">30.00 €</p>
+                        <a href="viber://chat?number=%2B359886622048&context=Искам%20да%20поръчам%20Черна%20тениска%20Hermes%20с%20кон" class="order-btn-viber">Поръчай по Viber</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="product-card">
+                <img class="product-img" src="hermes-white.png" alt="Hermes White">
+                <div class="product-info">
+                    <div>
+                        <p class="product-brand">Hermes</p>
+                        <h3 class="product-title">Бяла памучна тениска с кралски кон</h3>
+                    </div>
+                    <div>
+                        <p class="product-price">30.00 €</p>
+                        <a href="viber://chat?number=%2B359886622048&context=Искам%20да%20поръчам%20Бяла%20тениска%20Hermes%20с%20кон" class="order-btn-viber">Поръчай по Viber</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="product-card">
+                <img class="product-img" src="porsche-black.jpg" alt="Porsche Black">
+                <div class="product-info">
+                    <div>
+                        <p class="product-brand">Hugo Boss x Porsche</p>
+                        <h3 class="product-title">Черна тениска със зелено Porsche</h3>
+                    </div>
+                    <div>
+                        <p class="product-price">30.00 €</p>
+                        <a href="viber://chat?number=%2B359886622048&context=Искам%20да%20поръчам%20Черна%20тениска%20Porsche" class="order-btn-viber">Поръчай по Viber</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="product-card">
+                <img class="product-img" src="porsche-white.jpg" alt="Porsche White">
+                <div class="product-info">
+                    <div>
+                        <p class="product-brand">Hugo Boss x Porsche</p>
+                        <h3 class="product-title">Бяла тениска със зелено Porsche</h3>
+                    </div>
+                    <div>
+                        <p class="product-price">30.00 €</p>
+                        <a href="viber://chat?number=%2B359886622048&context=Искам%20да%20поръчам%20Бяла%20тениска%20Porsche" class="order-btn-viber">Поръчай по Viber</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="product-card">
+                <img class="product-img" src="armani-black.png" alt="Armani Exchange Black">
+                <div class="product-info">
+                    <div>
+                        <p class="product-brand">Armani Exchange</p>
+                        <h3 class="product-title">Черна изчистена тениска с AX лого</h3>
+                    </div>
+                    <div>
+                        <p class="product-price">25.00 €</p>
+                        <a href="viber://chat?number=%2B359886622048&context=Искам%20да%20поръчам%20Черна%20тениска%20AX%20Armani" class="order-btn-viber">Поръчай по Viber</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="product-card">
+                <img class="product-img" src="armani-white.png" alt="Armani Exchange White">
+                <div class="product-info">
+                    <div>
+                        <p class="product-brand">Armani Exchange</p>
+                        <h3 class="product-title">Бяла изчистена тениска с AX лого</h3>
+                    </div>
+                    <div>
+                        <p class="product-price">25.00 €</p>
+                        <a href="viber://chat?number=%2B359886622048&context=Искам%20да%20поръчам%20Бяла%20тениска%20AX%20Armani" class="order-btn-viber">Поръчай по Viber</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="product-card">
+                <img class="product-img" src="boss-black.png" alt="Boss Black">
+                <div class="product-info">
+                    <div>
+                        <p class="product-brand">Hugo Boss</p>
+                        <h3 class="product-title">Черна маркова тениска с голямо BOSS лого</h3>
+                    </div>
+                    <div>
+                        <p class="product-price">20.00 €</p>
+                        <a href="viber://chat?number=%2B359886622048&context=Искам%20да%20поръчам%20Черна%20тениска%20Boss" class="order-btn-viber">Поръчай по Viber</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="product-card">
+                <img class="product-img" src="boss-white.png" alt="Boss White">
+                <div class="product-info">
+                    <div>
+                        <p class="product-brand">Hugo Boss</p>
+                        <h3 class="product-title">Бяла маркова тениска с голямо BOSS лого</h3>
+                    </div>
+                    <div>
+                        <p class="product-price">20.00 €</p>
+                        <a href="viber://chat?number=%2B359886622048&context=Искам%20да%20поръчам%20Бяла%20тениска%20Boss" class="order-btn-viber">Поръчай по Viber</a>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <section id="socials" class="socials-section">
+        <h2 class="socials-title">Следвайте ни в social мрежите</h2>
+        <div class="social-buttons">
+            <a href="#" target="_blank" class="social-btn btn-tiktok">TikTok</a>
+            <a href="#" target="_blank" class="social-btn btn-instagram">Instagram</a>
+        </div>
+        <p style="color: var(--text-gray); margin-top: 15px;">За въпроси: Viber или обаждане на 0886622048</p>
+    </section>
+
+    <footer>
+        <p>&copy; 2026 KAI SHOP CLOTHING. Всички права запазени.</p>
+    </footer>
+
+</body>
+</html>
