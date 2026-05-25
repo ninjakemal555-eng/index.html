@@ -1,3 +1,4 @@
+cat > /mnt/user-data/outputs/index.html << 'HTMLEOF'
 <!DOCTYPE html>
 <html lang="bg">
 <head>
@@ -28,7 +29,6 @@
             overflow-x: hidden;
         }
 
-        /* НАВИГАЦИЯ */
         header {
             background-color: rgba(0, 0, 0, 0.9);
             border-bottom: 2px solid #1a1a1a;
@@ -93,14 +93,12 @@
             text-shadow: 0 0 10px var(--accent-blue);
         }
 
-        /* ХЕРО БАНЕР */
         .hero {
             height: 60vh;
             display: flex;
             justify-content: center;
             align-items: center;
             text-align: center;
-            position: relative;
             background: radial-gradient(circle, rgba(181,0,181,0.2) 0%, rgba(0,0,0,1) 80%);
             margin-top: 70px;
             padding: 20px;
@@ -152,7 +150,6 @@
             box-shadow: 0 0 30px rgba(181, 0, 181, 0.8);
         }
 
-        /* КАТАЛОГ С ПРОДУКТИ */
         .shop-section {
             max-width: 1200px;
             margin: 60px auto;
@@ -255,7 +252,6 @@
             box-shadow: 0 0 15px rgba(115, 96, 242, 0.6);
         }
 
-        /* СОЦИАЛНИ МРЕЖИ */
         .socials-section {
             background-color: var(--panel-dark);
             border-top: 1px solid #151515;
@@ -294,7 +290,6 @@
         .btn-instagram { background: linear-gradient(45deg, #f09433, #e6683c, #dc2743, #cc2366, #bc1888); }
         .btn-instagram:hover { box-shadow: 0 0 15px #dc2743; }
 
-        /* ФУТЪР */
         footer {
             background-color: #000;
             color: var(--text-gray);
@@ -315,7 +310,7 @@
     <header>
         <div class="nav-container">
             <a href="#" class="brand-logo">
-                <img src="f9bd453d53ef47119e69061b1e6714a8.png" alt="KAI Лого" class="logo-img">
+                <img src="https://raw.githubusercontent.com/ninjakemal555-eng/index.html/main/IMG_20260429_163230_270.webp" alt="KAI Лого" class="logo-img">
                 <div class="brand-text">KAI <span class="purple">SHOP</span></div>
             </a>
             <ul class="nav-links">
@@ -327,7 +322,7 @@
 
     <div class="hero">
         <div class="hero-content">
-            <img src="f9bd453d53ef47119e69061b1e6714a8.png" alt="KAI Лого" class="hero-logo">
+            <img src="https://raw.githubusercontent.com/ninjakemal555-eng/index.html/main/IMG_20260429_163230_270.webp" alt="KAI Лого" class="hero-logo">
             <h1>KAI SHOP CLOTHING</h1>
             <p>Премиум тениски директно във вашия гардероб.</p>
             <a href="#catalog" class="btn-shop">Разгледай колекцията</a>
@@ -336,25 +331,27 @@
 
     <section id="catalog" class="shop-section">
         <h2 class="section-title">Каталог <span>Цени</span></h2>
-        
+
         <div class="products-grid">
-            
+
+            <!-- Armani - 25€ -->
             <div class="product-card">
-                <img class="product-img" src="78c5f865c6df44e2bc3f43d91066fccc.png" alt="Armani Exchange">
+                <img class="product-img" src="https://raw.githubusercontent.com/ninjakemal555-eng/index.html/main/1778611684180.png" alt="Armani">
                 <div class="product-info">
                     <div>
-                        <p class="product-brand">Armani Exchange</p>
-                        <h3 class="product-title">Armani Exchange тениска</h3>
+                        <p class="product-brand">Armani</p>
+                        <h3 class="product-title">Armani тениска</h3>
                     </div>
                     <div>
                         <p class="product-price">25.00 €</p>
-                        <a href="viber://chat?number=%2B359886622048&context=Искам%20да%20поръчам%20тениска%20AX%20Armani" class="order-btn-viber">Поръчай по Viber</a>
+                        <a href="viber://chat?number=%2B359886622048&context=Искам%20да%20поръчам%20тениска%20Armani" class="order-btn-viber">Поръчай по Viber</a>
                     </div>
                 </div>
             </div>
 
+            <!-- Gucci бяло - 30€ -->
             <div class="product-card">
-                <img class="product-img" src="viber_изображение_2026-05-23_19-32-04-192.webp" alt="Gucci">
+                <img class="product-img" src="https://raw.githubusercontent.com/ninjakemal555-eng/index.html/main/78c5f865c6df44e2bc3f43d91066fccc.png" alt="Gucci">
                 <div class="product-info">
                     <div>
                         <p class="product-brand">Gucci</p>
@@ -367,8 +364,9 @@
                 </div>
             </div>
 
+            <!-- Gucci черно - 30€ -->
             <div class="product-card">
-                <img class="product-img" src="viber_изображение_2026-05-23_19-32-04-098.webp" alt="Gucci">
+                <img class="product-img" src="https://raw.githubusercontent.com/ninjakemal555-eng/index.html/main/bc10fc441e92499fbb3fd152dbcf8f23.png" alt="Gucci">
                 <div class="product-info">
                     <div>
                         <p class="product-brand">Gucci</p>
@@ -381,12 +379,13 @@
                 </div>
             </div>
 
+            <!-- Hermes бяло - 30€ -->
             <div class="product-card">
-                <img class="product-img" src="74bff8974db24a20b3f50789ed64ed6f.png" alt="Hermes">
+                <img class="product-img" src="https://raw.githubusercontent.com/ninjakemal555-eng/index.html/main/91b2ab9c44d04a6bbd2a25e897ca70a2.png" alt="Hermes">
                 <div class="product-info">
                     <div>
                         <p class="product-brand">Hermes</p>
-                        <h3 class="product-title">Hermes тениска (Конче)</h3>
+                        <h3 class="product-title">Hermes тениска</h3>
                     </div>
                     <div>
                         <p class="product-price">30.00 €</p>
@@ -395,12 +394,13 @@
                 </div>
             </div>
 
+            <!-- Hermes черно - 30€ -->
             <div class="product-card">
-                <img class="product-img" src="9e85a00a4f5e45f4ae936f454e2f8b3a.png" alt="Hermes">
+                <img class="product-img" src="https://raw.githubusercontent.com/ninjakemal555-eng/index.html/main/9e85a00a4f5e45f4ae936f454e2f8b3a.png" alt="Hermes">
                 <div class="product-info">
                     <div>
                         <p class="product-brand">Hermes</p>
-                        <h3 class="product-title">Hermes тениска (Конче)</h3>
+                        <h3 class="product-title">Hermes тениска</h3>
                     </div>
                     <div>
                         <p class="product-price">30.00 €</p>
@@ -409,40 +409,13 @@
                 </div>
             </div>
 
+            <!-- Hugo куче бяло - 30€ -->
             <div class="product-card">
-                <img class="product-img" src="viber_изображение_2026-05-23_19-32-04-043.jpg" alt="Hugo">
+                <img class="product-img" src="https://raw.githubusercontent.com/ninjakemal555-eng/index.html/main/IMG_20260512_211302_841.jpg" alt="Hugo">
                 <div class="product-info">
                     <div>
                         <p class="product-brand">Hugo</p>
-                        <h3 class="product-title">Hugo тениска (Кола)</h3>
-                    </div>
-                    <div>
-                        <p class="product-price">25.00 €</p>
-                        <a href="viber://chat?number=%2B359886622048&context=Искам%20да%20поръчам%20тениска%20Hugo" class="order-btn-viber">Поръчай по Viber</a>
-                    </div>
-                </div>
-            </div>
-
-            <div class="product-card">
-                <img class="product-img" src="viber_изображение_2026-05-23_19-32-04-019.png" alt="Hugo">
-                <div class="product-info">
-                    <div>
-                        <p class="product-brand">Hugo</p>
-                        <h3 class="product-title">Hugo тениска (Кола)</h3>
-                    </div>
-                    <div>
-                        <p class="product-price">25.00 €</p>
-                        <a href="viber://chat?number=%2B359886622048&context=Искам%20да%20поръчам%20тениска%20Hugo" class="order-btn-viber">Поръчай по Viber</a>
-                    </div>
-                </div>
-            </div>
-
-            <div class="product-card">
-                <img class="product-img" src="d867e3e1809c4561902f5d2e1362f5e2.png" alt="Hugo">
-                <div class="product-info">
-                    <div>
-                        <p class="product-brand">Hugo</p>
-                        <h3 class="product-title">Hugo тениска (Куче)</h3>
+                        <h3 class="product-title">Hugo тениска</h3>
                     </div>
                     <div>
                         <p class="product-price">30.00 €</p>
@@ -451,8 +424,54 @@
                 </div>
             </div>
 
+            <!-- Hugo куче черно - 30€ -->
             <div class="product-card">
-                <img class="product-img" src="viber_изображение_2026-05-23_19-32-02-786.png" alt="Boss">
+                <img class="product-img" src="https://raw.githubusercontent.com/ninjakemal555-eng/index.html/main/d867e3e1809c4561902f5d2e1362f5e2.png" alt="Hugo">
+                <div class="product-info">
+                    <div>
+                        <p class="product-brand">Hugo</p>
+                        <h3 class="product-title">Hugo тениска</h3>
+                    </div>
+                    <div>
+                        <p class="product-price">30.00 €</p>
+                        <a href="viber://chat?number=%2B359886622048&context=Искам%20да%20поръчам%20тениска%20Hugo" class="order-btn-viber">Поръчай по Viber</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Hugo порше бяло - 25€ -->
+            <div class="product-card">
+                <img class="product-img" src="https://raw.githubusercontent.com/ninjakemal555-eng/index.html/main/IMG_20260512_211313_040.jpg" alt="Hugo">
+                <div class="product-info">
+                    <div>
+                        <p class="product-brand">Hugo</p>
+                        <h3 class="product-title">Hugo тениска</h3>
+                    </div>
+                    <div>
+                        <p class="product-price">25.00 €</p>
+                        <a href="viber://chat?number=%2B359886622048&context=Искам%20да%20поръчам%20тениска%20Hugo" class="order-btn-viber">Поръчай по Viber</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Hugo порше черно - 25€ -->
+            <div class="product-card">
+                <img class="product-img" src="https://raw.githubusercontent.com/ninjakemal555-eng/index.html/main/IMG_20260512_211318_201.jpg" alt="Hugo">
+                <div class="product-info">
+                    <div>
+                        <p class="product-brand">Hugo</p>
+                        <h3 class="product-title">Hugo тениска</h3>
+                    </div>
+                    <div>
+                        <p class="product-price">25.00 €</p>
+                        <a href="viber://chat?number=%2B359886622048&context=Искам%20да%20поръчам%20тениска%20Hugo" class="order-btn-viber">Поръчай по Viber</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Boss бял - 20€ -->
+            <div class="product-card">
+                <img class="product-img" src="https://raw.githubusercontent.com/ninjakemal555-eng/index.html/main/1778611843766.png" alt="Boss">
                 <div class="product-info">
                     <div>
                         <p class="product-brand">Boss</p>
@@ -465,8 +484,9 @@
                 </div>
             </div>
 
+            <!-- Boss черно - 20€ -->
             <div class="product-card">
-                <img class="product-img" src="viber_изображение_2026-05-23_19-32-04-138.webp" alt="Boss">
+                <img class="product-img" src="https://raw.githubusercontent.com/ninjakemal555-eng/index.html/main/file_000000008f1c71fdab974a997a1304df.png" alt="Boss">
                 <div class="product-info">
                     <div>
                         <p class="product-brand">Boss</p>
@@ -479,12 +499,13 @@
                 </div>
             </div>
 
+            <!-- Kenzo черно - 30€ -->
             <div class="product-card">
-                <img class="product-img" src="bc10fc441e92499fbb3fd152dbcf8f23.png" alt="Kenzo">
+                <img class="product-img" src="https://raw.githubusercontent.com/ninjakemal555-eng/index.html/main/74bff8974db24a20b3f50789ed64ed6f.png" alt="Kenzo">
                 <div class="product-info">
                     <div>
                         <p class="product-brand">Kenzo</p>
-                        <h3 class="product-title">Kenzo тениска (Тигър)</h3>
+                        <h3 class="product-title">Kenzo тениска</h3>
                     </div>
                     <div>
                         <p class="product-price">30.00 €</p>
@@ -493,26 +514,13 @@
                 </div>
             </div>
 
+            <!-- Kenzo бяло - 30€ -->
             <div class="product-card">
-                <img class="product-img" src="91b2ab9c44d04a6bbd2a25e897ca70a2.png" alt="Kenzo">
+                <img class="product-img" src="https://raw.githubusercontent.com/ninjakemal555-eng/index.html/main/930370dade084faf99baa636afbe77c6.png" alt="Kenzo">
                 <div class="product-info">
                     <div>
                         <p class="product-brand">Kenzo</p>
-                        <h3 class="product-title">Kenzo тениска (Тигър)</h3>
-                    </div>
-                    <div>
-                        <p class="product-price">30.00 €</p>
-                        <a href="viber://chat?number=%2B359886622048&context=Искам%20да%20поръчам%20тениска%20Kenzo" class="order-btn-viber">Поръчай по Viber</a>
-                    </div>
-                </div>
-            </div>
-
-            <div class="product-card">
-                <img class="product-img" src="930370dade084faf99baa636afbe77c6.png" alt="Kenzo">
-                <div class="product-info">
-                    <div>
-                        <p class="product-brand">Kenzo</p>
-                        <h3 class="product-title">Kenzo тениска (Тигър)</h3>
+                        <h3 class="product-title">Kenzo тениска</h3>
                     </div>
                     <div>
                         <p class="product-price">30.00 €</p>
@@ -539,3 +547,4 @@
 
 </body>
 </html>
+HTMLEOF
